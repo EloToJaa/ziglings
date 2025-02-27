@@ -22,7 +22,7 @@ pub fn main() void {
 // This function prints, but does not return anything.
 //
 fn printPowersOfTwo(numbers: [4]u16) void {
-    while (numbers) |n| {
+    for (numbers) |n| {
         std.debug.print("{} ", .{twoToThe(n)});
     }
 }
